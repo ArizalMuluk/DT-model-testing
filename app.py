@@ -24,7 +24,7 @@ def index():
 
             features = np.array([[sepal_length, sepal_width, petal_length, petal_width]])
             predicted_class = model.predict(features)[0]
-            iris_names = ['setosa', 'versicolor', 'virginica']
+            iris_names = ['Setosa', 'Versicolor', 'Virginica']
             prediction = iris_names[predicted_class]
         except ValueError:
             prediction = "Masukkan nilai numerik yang valid untuk semua fitur."
